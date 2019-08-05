@@ -8,7 +8,7 @@ function reset() {
     gameOver: false,
     jediMaster: false,
     characterArrayList: [
-      // 1.  An array or object of possible characters properties would incldue 
+      // 1.  An array or object of possible characters properties would include 
       // name, picture, Health Points, Attack Power and counter attack power
 
       {
@@ -102,7 +102,7 @@ $(document).ready(function () {
   audioElement.loop = true;
   audioElement.setAttribute('src', 'assets/audio/starwars.m4a');
 
-  // displays the modal
+  // displays modal
   $('#myModal').modal('show');
 
   function render() {
