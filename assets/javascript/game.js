@@ -107,7 +107,7 @@ $(document).ready(function () {
 
   function render() {
     // setting variables set to id tags with html elements for easy reference later
-    // using the $ before variables indicates that they are jQuery objects, it doesn't affect perfermance of the variables
+    // using the $ before variables indicates that they are jQuery objects
     var $charList = $('#characterList');
     var $enemyList = $('#enemyList');
     var $yourCharacter = $('#yourCharacter');
@@ -273,9 +273,6 @@ $(document).ready(function () {
     $audioBattle.setAttribute('src', gameObj.battleSoundPick());
     $audioBattle.play();
 
-
-
-
     // Win scenario
     // set win variable  and loss in order to consolidate win ifs. 
     var win = (currentEnemy.healthPoints < 1 && yourCharacter.healthPoints > 1 ||
@@ -287,8 +284,6 @@ $(document).ready(function () {
       ((yourCharacter.healthPoints < 1 && currentEnemy.healthPoints < 1) &&
         (yourCharacter.healthPoints < currentEnemy.healthPoints))
     ) ? true : false;
-
-
 
     // First if is only if user has defeated all of the enemies    	
     if (win) {
