@@ -29,7 +29,7 @@ function reset() {
         name: 'Less Ray',
         visual: 'assets/images/rey-from-star-wars-force-awakens.jpg',
         healthPoints: 180,
-        attackPower: 7,
+        attackPower: 9,
         counterAttackPower: 15,
       },
       {
@@ -43,30 +43,17 @@ function reset() {
         name: 'Kylo Wren',
         visual: 'assets/images/kylo-ren-db-main_e2e6f666.jpeg',
         healthPoints: 110,
-        attackPower: 12,
+        attackPower: 10,
         counterAttackPower: 20,
       },
       {
         name: 'Darth Maul',
         visual: 'assets/images/darth_maul_by_xwaxwingx-d5tu9k8.jpg',
         healthPoints: 100,
-        attackPower: 12,
+        attackPower: 15,
         counterAttackPower: 24,
       }
-      //    {
-      //     name: 'Obi-Wan Kanobi',
-      //     visual: 'assets/images/obiwan.jpg',
-      //     healthPoints: 120, 
-      //     attackPower: 10, 
-      //     counterAttackPower: 24,
-      // 	},
-      //  {
-      //     name: 'Boba Fett',
-      //     visual: 'assets/images/bobafett.jpg',
-      //     healthPoints: 90,
-      //     attackPower: 25,
-      //     counterAttackPower: 26,
-      // }
+
     ],
     // Initializes game start true
     gameStart: true,
@@ -81,8 +68,8 @@ function reset() {
     winOccurred: false,
 
     // create an array of battle sounds
-    battleSoundsArray: ['assets/audio/saberclash.mp3', 'assets/audio/saberclash1.mp3', 'assets/audio/saberclash2.mp3', 'assets/audio/saberclash3.mp3', 'assets/audio/saberclash4.mp3', 'assets/audio/saberclash5.mp3', 'assets/audio/saberclash6.mp3', 'assets/audio/spin1.mp3', 'assets/audio/spin2.mp3', 'assets/audio/spin3.mp3', 'assets/audio/spin4.mp3', 'assets/audio/spin5.mp3', 'assets/audio/spin6.mp3', 'assets/audio/swing1.mp3', 'assets/audio/swing2.mp3',],
-    characherSelectSound: 'assets/audio/saberon.mp3',
+    battleSoundsArray: ['assets/audio/Star-wars-lightsaber-fight-sound-effects.mp3',],
+    characherSelectSound: 'assets/audo/Star-wars-lightsaber-fight-sound-effects.mp3',
 
     // picks at random battle sound when the attack button is pressed
     battleSoundPick: function () {
@@ -100,7 +87,7 @@ $(document).ready(function () {
   var audioElement = document.createElement('audio');
   audioElement.autoplay = true;
   audioElement.loop = true;
-  audioElement.setAttribute('src', 'assets/audio/starwars.m4a');
+  audioElement.setAttribute('src', 'assets/audio/');
 
   // displays modal
   $('#myModal').modal('show');

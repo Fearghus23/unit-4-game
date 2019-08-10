@@ -27,7 +27,7 @@ body {
 }
 
 
-/*Classes available*/
+/*Classes*/
 .center-block {
   display: block;
   margin-left: auto;
@@ -63,7 +63,7 @@ body {
 
 .enemyContainer {
 	display: inline-block;
-	/*height: 200px;*/
+	
 	width: 200px;
 	border: solid 4px black;
 	margin-bottom: 10px;
